@@ -13,17 +13,19 @@ namespace Selenium.BaseClass
         public IWebDriver driver;
 
         [OneTimeSetUp]
-        public void Open()
+        public void OpenWebsites()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Url = "https://www.margonem.pl/";
+            //driver.Url = "https://www.margonem.pl/";
+            driver.Url = "https://poczta.wp.pl/rejestracja/";
+
         }
         
         [OneTimeTearDown]
         public void Close()
         {
-            driver.Quit(); 
+           // driver.Quit(); 
         }
     }
 }
