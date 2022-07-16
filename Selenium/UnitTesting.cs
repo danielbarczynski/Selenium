@@ -25,7 +25,7 @@ namespace Selenium
             Thread.Sleep(5000);
         }
 
-        [Test, Category("Interia")]
+        [Test, Category("Wp")]
         public void Register2()
         {
             IWebElement monthDropdown = driver.FindElement(By.Name("month"));
