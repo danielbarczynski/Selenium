@@ -5,13 +5,8 @@ using Selenium.BaseClass;
 namespace Selenium
 {
     [TestFixture]
-    public class Tests : BaseTest
+    public class UnitTesting : BaseTest
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test, Category("Margonem")]
         public void Register()
         {
